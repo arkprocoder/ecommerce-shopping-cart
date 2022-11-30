@@ -39,7 +39,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">Shop Cart</a></h1>
+      <h1 class="logo"><a href="/">Shop Cart</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="static/assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -52,9 +52,9 @@
           <li><a class="nav-link scrollto" href="/about">My Profile</a></li>
           <li class="dropdown"><a href="#"><span>SignIn</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="">Sign Up</a></li>
-              <li><a href="">Login</a></li>
-              <li><a href="">Logout</a></li>
+              <li><a href="/auth/signup/">Sign Up</a></li>
+              <li><a href="/auth/login/">Login</a></li>
+              <li><a href="/auth/logout/">Logout</a></li>
 
             </ul>
           </li>
@@ -72,10 +72,9 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container">
-      <h3>Welcome to <strong>Shopping Cart</strong></h3>
-      <h1>We're Creative Agency</h1>
-      <h2>We are team of talented designers making websites with Bootstrap</h2>
-      <a href="" class="btn-get-started scrollto">Shop Now</a>
+
+      {% block content %}{% endblock content %}
+      
     </div>
   </section><!-- End Hero -->
 
