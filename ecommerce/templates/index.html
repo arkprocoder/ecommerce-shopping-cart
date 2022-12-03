@@ -3,42 +3,7 @@
 {% block content %}
 
 
-
-<div class="card bg-light p-5">
-
-  <h3 class= "text-dark" >Signup</h3>
-
-
-<form action="/auth/signup/" method="post">{% csrf_token %}
-  <br>
-  
-  
-  <label for="email">Email</label>
-  <div class="form-group">
-  <input type="email" class="form-control p-2" id="email" name="email" required>
-  </div>
-  <label for="pass1">Password</label>
-  <div class="form-group">
-  <input type="password" class="form-control p-2" id="pass1" name="pass1" required>
-  </div>
-  <label for="pass2">Confirm Password</label>
-  <div class="form-group">
-  <input type="password" class="form-control p-2" id="pass2" name="pass2" required>
-  </div>
-  <br>
-  <button type="submit" class="btn btn-dark">SignIn</button>
-  
-  <br>
-  Already User? <a href="/arkauth/login/">Login</a>
-  <br>
-  
-  </form>
-
-
-
-
-
-</div>
+<h1>Welcome to Dhamaka Sale</h1>
 
 {% endblock content %}
 {% block body %}
