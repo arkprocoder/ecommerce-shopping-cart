@@ -47,8 +47,15 @@
           <li><a class="nav-link scrollto active" href="/">Home</a></li>
           <li><a class="nav-link scrollto" href="/blog">Blog</a></li>
           <li><a class="nav-link scrollto" href="/about">About</a></li>
-          <li><a class="nav-link scrollto" href="/about">Orders</a></li>
+          <li><a class="nav-link scrollto" href="/checkout">Checkout</a></li>
           <li><a class="nav-link scrollto" href="/about">My Profile</a></li>
+
+          <button type="button" class="nav-link scrollto bg-danger p-3 m-2 text-white" id="popcart" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" >  Cart (<span id="cart">0</span>)
+          </button>
+
+
+
+
 
 
           {% if request.user.is_authenticated %}
@@ -72,7 +79,10 @@
 
 
 
-          <li><a class="nav-link scrollto bg-danger p-3 m-2" href="/contact">Cart</a></li>
+         
+
+
+
           <li><a class="nav-link scrollto bg-dark p-3 m-2" href="/contact">Contact</a></li>
           
         </ul>
