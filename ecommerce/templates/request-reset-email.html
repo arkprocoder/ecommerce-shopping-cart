@@ -1,5 +1,5 @@
 {% extends 'base.html' %} 
-{% block title %}Login{% endblock title %} 
+{% block title %}reset password{% endblock title %} 
 {% block content %}
 
 <div class="card bg-light p-5">
@@ -13,9 +13,9 @@
   {% endfor %}
 
   
-  <h3 class="text-dark">Login</h3>
+  <h3 class="text-dark">Request a reset Link</h3>
 
-  <form action="/auth/login/" method="post">
+  <form action="/auth/request-reset-email/" method="post">
     {% csrf_token %}
     <br />
 
@@ -29,24 +29,11 @@
         required
       />
     </div>
-    <label for="pass1">Password</label>
-    <div class="form-group">
-      <input
-        type="password"
-        class="form-control p-2"
-        id="pass1"
-        name="pass1"
-        required
-      />
-    </div>
-   
+   <br>
+    <button type="submit" class="btn btn-dark">Submit</button>
+
     <br />
-    <button type="submit" class="btn btn-dark">Login</button>
-    <br>
-    <span> Forget Password? <a href="/auth/request-reset-email/">Reset</a></span>
-    <br>
-    <br />
-    New User? <a href="/auth/signup/">Signup</a>
+   <a href="/">Go Back</a>
     <br />
   </form>
 </div>

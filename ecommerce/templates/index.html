@@ -54,12 +54,12 @@ Home
             </h6>
             <span id="divpr{{i.id}}" class="divpr">
               <button id="pr{{i.id}}" class="btn btn-danger cart btn-sm mt-0">
-                AddToCart
+                AddToCart <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </span>
 
             <a href="/media/{{i.image}}">
-              <button class="btn btn-dark btn-sm cart">View</button></a
+              <button class="btn btn-dark btn-sm cart"><i class="fa-solid fa-eye"></i></button></a
             >
           </div>
         </div>
@@ -140,7 +140,7 @@ Home
   function clearCart() {
       cart = JSON.parse(localStorage.getItem('cart'));
       for (var item in cart) {
-          document.getElementById('div' + item).innerHTML = '<button id="' + item + '" class="btn btn-danger cart">Add to Card</button>'
+          document.getElementById('div' + item).innerHTML = '<button id="' + item + '" class="btn btn-danger cart">AddtoCard <i class="fa-solid fa-cart-shopping"></i></button>'
       }
       localStorage.clear();
       cart = {};
